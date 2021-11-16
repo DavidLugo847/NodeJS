@@ -1,0 +1,27 @@
+{
+    "name": "nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "filesystem.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DavidLugo847/NodeJS.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/DavidLugo847/NodeJS/issues"
+    },
+    "homepage": "https://github.com/DavidLugo847/NodeJS#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
