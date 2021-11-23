@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    background: indigo;
+}
+
+.tdprod {
+    width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: sans-serif;
+    border: 1px black solid;
+}
+
+.tdprod th {
+    border-bottom: 1px black solid;
+}
+
+.main {
+    display: flex;
+    background: rgb(202, 202, 202);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.contbutton {
+    display: flex;
+    width: 200px;
+}
+
+.contbutton a {
+    background: rgb(0, 132, 255);
+    padding: 1em 1.5em 1em 1.5em;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+}
