@@ -10,9 +10,42 @@ h1 {
 #main {
     border: gray 1px solid;
     border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 4em;
+    width: 500px;
 }
 
 .pics {
     margin-top: 2.1em;
     width: 500px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-left: 1em;
+}
+
+input[type=text] {
+    width: 450px;
+    height: 40px;
+    margin: 1em;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+input[type=number] {
+    width: 450px;
+    height: 40px;
+    margin: 1em;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.btn {
+    margin: 1em;
+    width: 100px;
+    height: 30px;
 }

@@ -16,19 +16,34 @@ Servidor.get("/", (req, resp) => {
 
 
 Servidor.post("/CIMC", (req, resp) => {
-    let nomb = parseInt(req.body.nombre);
+    let nomb = req.body.nombre;
     let p = parseInt(req.body.peso);
-    let a = parseInt(req.body.altura);
-
+    let a = parseFloat(req.body.altura);
     let res = p / (a * a);
-    if (res)
-        resp.send("Hola " + nombre + ".<br> Su indice de masa corporal es: " + res + ". <br>")
+    let resInt = res.toFixed(2);
 
+    if (res < 18.5) {
+        resp.send("Hola " + nomb + ".<br> Su indice de masa corporal es: " + resInt + ". <br>Estas por debajo del peso normal.");
+    } else if (res >= 18.5 && res < 24.9) {
+        resp.send("Hola " + nomb + ".<br> Su indice de masa corporal es: " + resInt + ". <br>Estas Saludable.");
+
+    } else if (res >= 25.0 && res < 29.9) {
+        resp.send("Hola " + nomb + ".<br> Su indice de masa corporal es: " + resInt + ". <br>Tienes sobrepeso.");
+
+    } else if (res >= 30.0 && res < 39.9) {
+        resp.send("Hola " + nomb + ".<br> Su indice de masa corporal es: " + resInt + ". <br>Tienes Obesidad.");
+
+    } else if (res > 40) {
+        resp.send("Hola " + nomb + ".<br> Su indice de masa corporal es: " + resInt + ". <br>Tienes Obesidad Morbida.");
+
+    } else {
+        resp.send("Por favor ingresa un dato valido.")
+    }
 });
 
 
 
 
-Servidor.listen(2000, () => {
+Servidor.listen(3000, () => {
     console.log("Server activo 3000");
 });
