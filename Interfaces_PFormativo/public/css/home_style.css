@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.topbar {
+    width: 100%;
+    height: 100px;
+}
+
+.toplogo {
+    position: absolute;
+    top: 1em;
+    width: 300px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transition-property: opacity, left, top, height;
+    transition-duration: 3s, 5s, 3s, 5s;
+}
+
+#navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #666563;
+    color: white;
+    cursor: pointer;
+}
+
+#navbar a.active:hover {
+    background-color: rgb(255, 102, 0);
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.searchbar {
+    position: absolute;
+    top: 2em;
+    right: 0.5em;
+}
+
+.searchbar input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    padding: 0 1em 0 1em;
+    border: none;
+    background: rgb(187, 187, 187);
+    border-bottom: 2px rgb(255, 102, 0) solid;
+}
+
+.searchbar button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px rgb(255, 102, 0) solid;
+}
+
+.searchbar button:hover {
+    background: rgb(255, 102, 0);
+    color: white;
+}
+
+
+/* Leftside  */
+
+#cont {
+    position: absolute;
+    top: 151px;
+    width: 250px;
+    height: 100%;
+    border-right: 1px gray solid;
+}
+
+#cont p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    margin-top: 3em;
+    margin-left: 1em;
+}
+
+.leftside {
+    margin-top: 3em;
+}
+
+.leftside div {
+    margin: 1em;
+}
+
+.cont2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px rgb(84, 196, 84) solid;
+    margin: 1em;
+    width: 200px;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+}
+
+.categoria div {
+    color: rgb(0, 0, 0);
+}
+
+.btnbuy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.buy {
+    background: rgb(255, 102, 0);
+    padding: 0.5em 4em 0.5em 4em;
+}
+
+.cont2 div img {
+    width: 100px;
+    margin: 2em 1em;
+}
+
+.titlecont2 {
+    background-color: rgba(0, 0, 0, 0.782);
+    margin-bottom: -8em;
+}
+
+.titlecont2 p {
+    color: white;
+}
+
+
+/* Foooter */
+
+footer {
+    display: block;
+}
+
+.footerbar {
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color: rgb(255, 102, 0);
+    margin-top: 20em;
+    height: 400px;
+}
+
+.p1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.flogo {
+    margin-bottom: 2em;
+}
+
+.fg1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fg1 p {
+    color: white;
+    text-align: center;
+}
+
+.fg2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px gray solid;
+    border-left: 1px gray solid;
+}
+
+.fg2 p {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.fg2 div {
+    display: flex;
+    flex-direction: column;
+}
+
+.fg2 div a {
+    margin-top: 1em;
+    color: white;
+}
+
+.ico {
+    color: white;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.fg3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fg3 p {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.fg3 div {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background: white;
+    border-radius: 5px;
+}
+
+.fg3 div a {
+    margin-top: 1em;
+    color: rgb(0, 0, 0);
+}
+
+.fg3 div a:hover {
+    text-decoration: underline;
+}
+
+.ico2 {
+    font-size: 1.5em;
+    margin-right: 1em;
+}

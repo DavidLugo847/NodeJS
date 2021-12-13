@@ -1,4 +1,3 @@
-const { Router } = require("express");
 const express = require("express");
 const ruta_index = express.Router();
 const contIndex = require("../controller/controller_index");

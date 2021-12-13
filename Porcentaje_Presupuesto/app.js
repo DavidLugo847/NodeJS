@@ -24,10 +24,6 @@ Servidor.post("/porcentaje", (req, resp) => {
 
     resp.send("<h1>Resultados<h1><br><table border='1'><th>Area</th><th>Porcentaje</th><th>Dinero Correspondiente</th><tbody><tr><td>Ginecología</td><td>40%</td><td>$" + pGinecologia + "</td></tr><tr><td>Traumatología</td><td>30%</td><td>$" + pTraumatologia + "</td></tr><tr><td>Pediatría</td><td>30%</td><td>$" + pPediatria + "</td></tr></tbody></table>");
 
-
-
-
-
 });
 
 

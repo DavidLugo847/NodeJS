@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/icomoon/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Tienda Online</title>
+</head>
+
+<body>
+    <div id="logo"><img class="lg" src="/img/logoSena.png" alt="LogoSenaEmpresa"></div>
+    <div class="splash"></div>
+    <div class="selogo"><img src="/img/centro_user_custom.png"></div>
+    <div id="navbar">
+        <a href="/">Home</a>
+        <a href="javascript:void(0)">Productos</a>
+        <a href="javascript:void(0)">Acerca de</a>
+        <a class="active open-modal" data-open="modal1">Iniciar Sesion</a>
+
+    </div>
+
+
+    <div class="modal" id="modal1" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                Iniciar Sesión
+                <button class="close-modal" aria-label="close modal" data-close>
+        ✕  
+      </button>
+            </header>
+            <section class="modal-content">
+                <div id="main-content">
+                    <div class="content1">
+
+                        <form action="/validarUsuario" method="post">
+                            <label class="lb" for="name">Nombre de Usuario:</label>
+                            <input type="text" name="login" placeholder="Ej. DavidLugo847">
+                            <label class="lb" for="username">Contraseña:</label>
+                            <input type="password" name="password" placeholder="Contraseña">
+
+                            <p><a class="recuperar" href="#">¿Olvidaste tu contraseña?</a></p>
+                            <div id="submitbtn">
+                                <input type="submit" value="Iniciar Sesion">
+                                <p><a class="reg" href="#">¿Aún no te has registrado?</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <div class="titlecont2">
+        <p class="sib">¿QUE PRODUCIMOS?</p>
+    </div>
+    <div class="cont2">
+        <div class="categoria">
+            <a href="#">
+                <div><img src="/img/frutasico.png" alt=""></div>
+                <div>Frutas</div>
+                <div></div>
+            </a>
+        </div>
+        <div class="categoria">
+            <a href="#">
+                <div><img src="/img/verduraico.png" alt=""></div>
+                <div>Verduras</div>
+                <div></div>
+            </a>
+        </div>
+        <div class="categoria">
+            <a href="#">
+                <div><img src="/img/ropaico.png" alt=""></div>
+                <div>Ropa</div>
+                <div></div>
+            </a>
+        </div>
+        <div class="categoria">
+            <a href="#">
+                <div><img src="/img/comidaico.png" alt=""></div>
+                <div>Comida</div>
+                <div></div>
+            </a>
+        </div>
+
+
+    </div>
+
+</body>
+<footer>
+
+    <div class="footerbar">
+        <div class="fg1"><img class="flogo" src="/img/logoSena2.png" alt="">
+            <p class="p1">SERVICIO NACIONAL DE APRENDIZAJE
+            </p><br>
+            <p>Esta pagina web esta sujeta a derechos<br> de autor por parte de DavidLugo<br>krt847@gmail.com</p>
+        </div>
+        <div class="fg2">
+            <p>ACCESOS RAPIDOS</p>
+            <div><a href="javascript:void(0)"><span class="ico icon-home1"></span>Home</a>
+                <a href="javascript:void(0)"><span class="ico icon-box1"></span>Productos</a>
+                <a href="javascript:void(0)"><span class="ico icon-information-outline"></span>Acerca de</a>
+                <a href="javascript:void(0)"><span class="ico icon-phone1"></span>Contacto</a>
+                <a href="javascript:void(0)"><span class="ico icon-mail4"></span>PQRS</a></div>
+        </div>
+        <div class="fg3">
+            <p>NUESTRAS REDES SOCIALES</p>
+            <div><a href="javascript:void(0)"><span class="ico2 icon-facebook1"></span>Facebook</a>
+                <a href="javascript:void(0)"><span class="ico2 icon-instagram1"></span>Instagram</a>
+                <a href="javascript:void(0)"><span class="ico2 icon-linkedin1"></span>LinkedIn</a>
+                <a href="javascript:void(0)"><span class="ico2 icon-discord"></span>Discord</a>
+                <a href="javascript:void(0)"><span class="ico2 icon-whatsapp1"></span>+573102933525</a></div>
+        </div>
+    </div>
+
+
+
+</footer>
+
+<script src="/js/scroll.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ '-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="/js/background.js"></script>
+<script src="/js/modal.js"></script>
+
+</html>
