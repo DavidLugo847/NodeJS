@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_admin.css">
+    <link rel="stylesheet" href="/icomoon/style.css">
+    <title>HOME EJS</title>
+</head>
+
+<body>
+    <div class="topbar"><img class="toplogo" src="/img/centro_user_custom.png" alt="">
+        <div class="searchbar"><a href="/cerrarSesion">Cerrar Sesión</a></div>
+    </div>
+    <div id="navbar">
+        <a href="#">Home</a>
+        <a href="/verProductos">Productos</a>
+        <a href="javascript:void(0)">Acerca de</a>
+        <a class="active">
+            <%=usuario%>
+        </a>
+
+    </div>
+
+    <div class="accesos">
+        <a href="">
+            <div>ADMINISTRAR USUARIOS</div>
+        </a>
+        <a href="">
+            <div>ADMINISTRAR INVENTARIO</div>
+        </a>
+        <a href="">
+            <div>ADMINISTRAR PRODUCTOS</div>
+        </a>
+        <a href="">
+            <div>ADMINISTRAR CLIENTES</div>
+        </a>
+    </div>
+
+
+
+</body>
+
+</html>

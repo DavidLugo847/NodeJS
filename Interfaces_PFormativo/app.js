@@ -14,6 +14,7 @@ Servidor.use(require("./routes/route_clientes"));
 Servidor.use(require("./routes/route_productos"));
 Servidor.use(require("./routes/route_home"));
 Servidor.use(require("./routes/route_ventas"));
+Servidor.use(require("./routes/route_admin"));
 
 
 
