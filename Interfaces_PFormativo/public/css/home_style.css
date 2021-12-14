@@ -21,7 +21,8 @@
 
 #navbar {
     overflow: hidden;
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(65, 162, 68);
+    border-bottom: 4px rgb(255, 102, 0) solid;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -123,8 +124,9 @@
 
 .cont2 {
     display: flex;
-    justify-content: center;
-    margin-left: 15%;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-left: 350px;
     flex-wrap: wrap;
 }
 
